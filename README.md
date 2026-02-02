@@ -48,6 +48,19 @@ It features **Redux state management**, **JWT-based authentication**, **Cloudina
 - Multer (file uploads)
 - CORS (cross-origin requests)
 
+<img width="1919" height="874" alt="Screenshot 2026-02-02 201616" src="https://github.com/user-attachments/assets/7c2d25c6-8cf5-46e5-a7d7-d13fe6ff4f61" />
+<img width="1916" height="867" alt="Screenshot 2026-02-02 201647" src="https://github.com/user-attachments/assets/afdc3c25-b310-4809-8046-19b91e4c7d37" />
+<img width="1919" height="870" alt="Screenshot 2026-02-02 201702" src="https://github.com/user-attachments/assets/7cd190f0-7779-46df-a1dd-280af035712f" />
+<img width="1918" height="868" alt="Screenshot 2026-02-02 201723" src="https://github.com/user-attachments/assets/fadffd5f-c56d-4957-95da-97d40e5e1745" />
+<img width="1919" height="930" alt="Screenshot 2026-02-02 201930" src="https://github.com/user-attachments/assets/d6ddb396-a408-41b3-9e45-9324f485f75a" />
+<img width="1919" height="873" alt="Screenshot 2026-02-02 201938" src="https://github.com/user-attachments/assets/dc92acda-8926-4375-9817-c9529040c858" />
+<img width="1919" height="872" alt="Screenshot 2026-02-02 201950" src="https://github.com/user-attachments/assets/3279ac50-68d8-4978-8f2a-487a7ae9b366" />
+<img width="1919" height="869" alt="Screenshot 2026-02-02 202041" src="https://github.com/user-attachments/assets/503e91e9-7610-4660-be3c-a573e54701a9" />
+<img width="1919" height="867" alt="Screenshot 2026-02-02 202056" src="https://github.com/user-attachments/assets/30bac715-54a5-46c5-9c7c-0d8433b2e9dd" />
+<img width="1919" height="867" alt="Screenshot 2026-02-02 202105" src="https://github.com/user-attachments/assets/e2271c95-b2d3-4323-a527-7763bbfcff7e" />
+<img width="1919" height="873" alt="Screenshot 2026-02-02 202115" src="https://github.com/user-attachments/assets/d7a17a8a-feaa-4417-9729-2e3da8770c97" />
+<img width="1919" height="871" alt="Screenshot 2026-02-02 202124" src="https://github.com/user-attachments/assets/ae8afaba-c1a8-4b91-8c19-84bd017e9b6c" />
+
 ---
 
 ## 📂 Project Structure
