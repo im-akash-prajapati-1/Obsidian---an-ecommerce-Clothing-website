@@ -1,0 +1,262 @@
+# 👗 Fashion E-Commerce Platform
+
+A **MERN stack** application for an online fashion store with **secure authentication, product management, shopping cart, and PayPal payment integration**.  
+It features **Redux state management**, **JWT-based authentication**, **Cloudinary cloud storage** for product images, and a **complete admin dashboard** for managing products, users, and orders.
+
+---
+
+## 🚀 Features
+
+- 🔐 **User Authentication & Authorization**: Secure registration & login with JWT tokens and bcryptjs password hashing
+- 👥 **User Profiles**: Manage personal information, view order history, and track deliveries
+- 🛍️ **Product Catalog**: Browse, filter, search, and sort products by category, price, and gender
+- 🛒 **Shopping Cart**: Add/remove items, update quantities, persistent cart management
+- 💳 **Secure Checkout**: Multi-step checkout process with shipping address validation
+- 💰 **PayPal Integration**: Secure payment processing with PayPal gateway
+- 📦 **Order Management**: Track orders in real-time, view order history, and order details
+- 🎯 **Newsletter Subscription**: Email subscription feature for promotions and updates
+- 📊 **Admin Dashboard**: 
+  - Complete product management (CRUD operations)
+  - User management and monitoring
+  - Order tracking and fulfillment
+  - Real-time order status updates
+- ☁️ **Cloud Storage (Cloudinary)**: Secure storage and fast delivery of product images
+- 🎨 **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- ⚡ **Real-time Notifications**: Toast notifications for user actions (success, error, info)
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React 19 + Vite
+- Redux Toolkit (centralized state management)
+- React Router DOM (client-side routing)
+- Tailwind CSS (responsive UI)
+- React Icons (icon library)
+- Axios (HTTP client)
+- PayPal React SDK
+- Sonner & React-Toastify (notifications)
+
+### Backend
+- Node.js + Express
+- MongoDB (Atlas)
+- Mongoose (ODM)
+- JWT (authentication)
+- bcryptjs (password hashing)
+- Cloudinary (image storage)
+- Multer (file uploads)
+- CORS (cross-origin requests)
+
+---
+
+## 📂 Project Structure
+
+```bash
+fashion-ecommerce/
+│
+├── frontend/ # React frontend (Vite)
+│ ├── src/
+│ │ ├── pages/
+│ │ │ ├── Home.jsx
+│ │ │ ├── CollectionPage.jsx
+│ │ │ ├── Login.jsx
+│ │ │ ├── Register.jsx
+│ │ │ ├── Profile.jsx
+│ │ │ ├── MyOrdersPage.jsx
+│ │ │ ├── OrderDetailsPage.jsx
+│ │ │ ├── OrderConfirmationPage.jsx
+│ │ │ └── AdminHomePage.jsx
+│ │ ├── components/
+│ │ │ ├── Common/
+│ │ │ │ ├── Header.jsx
+│ │ │ │ ├── Navbar.jsx
+│ │ │ │ ├── Footer.jsx
+│ │ │ │ ├── ProtectedRoute.jsx
+│ │ │ │ └── Searchbar.jsx
+│ │ │ ├── Products/
+│ │ │ │ ├── ProductGrid.jsx
+│ │ │ │ ├── ProductDetails.jsx
+│ │ │ │ ├── FilterSidebar.jsx
+│ │ │ │ ├── SortOptions.jsx
+│ │ │ │ └── FeaturedCollection.jsx
+│ │ │ ├── Cart/
+│ │ │ │ ├── CartContent.jsx
+│ │ │ │ ├── Checkout.jsx
+│ │ │ │ └── PayPalButton.jsx
+│ │ │ ├── Admin/
+│ │ │ │ ├── AdminLayout.jsx
+│ │ │ │ ├── ProductManagement.jsx
+│ │ │ │ ├── UserManagement.jsx
+│ │ │ │ ├── OrderManagement.jsx
+│ │ │ │ └── EditProductPage.jsx
+│ │ │ └── Layout/
+│ │ │ ├── Hero.jsx
+│ │ │ ├── CartDrawer.jsx
+│ │ │ └── UserLayout.jsx
+│ │ ├── redux/
+│ │ │ ├── store.js
+│ │ │ └── Slices/
+│ │ │ ├── authSlice.js
+│ │ │ ├── cartSlice.js
+│ │ │ ├── checkoutSlice.js
+│ │ │ ├── orderSlice.js
+│ │ │ ├── productsSlice.js
+│ │ │ ├── adminSlice.js
+│ │ │ ├── adminProductSlice.js
+│ │ │ └── adminOrderSlice.js
+│ │ ├── App.jsx
+│ │ ├── main.jsx
+│ │ └── index.css
+│ ├── .env
+│ ├── vite.config.js
+│ ├── tailwind.config.js
+│ └── package.json
+│
+├── backend/ # Express backend
+│ ├── models/
+│ │ ├── user.js
+│ │ ├── Product.js
+│ │ ├── Cart.js
+│ │ ├── Checkout.js
+│ │ ├── Order.js
+│ │ ├── Subscriber.js
+│ │ └── Log.js
+│ ├── routes/
+│ │ ├── userRoutes.js
+│ │ ├── ProductRoutes.js
+│ │ ├── CartRoutes.js
+│ │ ├── CheckoutRoutes.js
+│ │ ├── orderRoutes.js
+│ │ ├── uploadRoutes.js
+│ │ ├── SubscribeRoute.js
+│ │ ├── adminRoutes.js
+│ │ ├── ProductAdminRoutes.js
+│ │ └── AdminOrderRoutes.js
+│ ├── middleware/
+│ │ └── authMiddleware.js
+│ ├── config/
+│ │ └── db.js
+│ ├── data/
+│ │ └── products.js
+│ ├── server.js
+│ ├── seeder.js
+│ ├── .env
+│ └── package.json
+│
+├── README.md
+└── .env # Environment variables (ignored)
+
+## ⚙️ Setup Instructions
+
+### 🔑 Prerequisites
+- Node.js (v18+ recommended)
+- MongoDB Atlas account
+- Cloudinary account (free tier is enough)
+- PayPal Developer account
+- Git
+
+### 🔧 Installation
+
+1. **Clone repository**
+   ```bash
+   git clone https://github.com/im-akash-prajapati-1/Obsidian---an-ecommerce-Clothing-website
+   cd Obsidian---an-ecommerce-Clothing-website
+   
+2. **Setup backend**
+   ```bash
+   cd backend
+   npm install
+   ```
+   **Create .env in server/:**
+   ```bash
+    PORT=5000
+    MONGODB_URI=your_mongodb_connection_string
+    JWT_SECRET=your_jwt_secret_key
+    CLOUDINARY_CLOUD_NAME=your_cloud_name
+    CLOUDINARY_API_KEY=your_api_key
+    CLOUDINARY_API_SECRET=your_api_secret
+    CLIENT_ORIGIN=http://localhost:5173
+    PAYPAL_CLIENT_ID=your_paypal_client_id
+   ```
+  **Seed database**
+   ```bash
+   node seeder.js
+   ```
+   **Start server:**
+   ```bash
+   npm run dev
+   ```
+3. **Setup frontend**
+   ```bash
+   cd frontend
+   npm install
+   ```
+   **Create .env in client/:**
+   ```bash
+   VITE_API_URL=http://localhost:5000/api
+   VITE_PAYPAL_CLIENT_ID=your_paypal_client_id
+   ```
+   **Start frontend:**
+   ```bash
+   npm run dev
+   ```
+🚀 Access the Application
+Frontend: http://localhost:5173
+Backend API: http://localhost:5000/api
+
+### **📊 Key Features Explained**
+
+Authentication Flow:
+- Users register with email and password
+- Passwords hashed with bcryptjs
+- JWT tokens issued upon login
+- Protected routes for authenticated users and admins
+
+Shopping Experience
+- Browse products with advanced filters (category, price, gender, size, color)
+- Add items to cart with selected variants (size, color)
+- Persistent cart storage
+- One-click checkout with PayPal payment
+
+Admin Dashboard
+- Add/edit/delete products with image uploads to Cloudinary
+- View all users and their details
+- Manage orders (update status, mark as delivered)
+- Real-time order tracking
+
+State Management (Redux)
+- authSlice: Login, registration, user info
+- cartSlice: Add/remove items, manage quantities
+- productsSlice: Fetch and filter products
+- orderSlice: Manage user orders
+- adminSlice: Admin-related state for dashboard operations
+
+### **🔒 Security Features**
+
+- JWT-based authentication
+- Password hashing with bcryptjs
+- Protected API endpoints with middleware
+- CORS configuration for cross-origin requests
+- Environment variables for sensitive data (never commit .env)
+- Admin-only routes on frontend and backend
+- Cloudinary secure image storage
+
+### **🔐 Security Notes**
+
+- .env files are ignored in Git
+- Never commit sensitive credentials to the repository
+- Rotate MongoDB/Cloudinary/PayPal secrets if .env was exposed
+- Validate and sanitize all user inputs on both frontend and backend
+- Keep dependencies updated for security patches
+
+### **📈 Future Enhancements**
+
+- Email notifications for order updates
+- User reviews and ratings
+- Wishlist feature
+- Advanced analytics dashboard for admins
+- Multi-language support
+- Social login (Google, Facebook)
+- Mobile app with React Native
+- Inventory alerts and stock management
